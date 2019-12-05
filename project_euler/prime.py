@@ -1,12 +1,12 @@
 from math import sqrt
 
 
-def primes(num=0, up_to=None):
+def primes(num=None, up_to=None):
     memo = {}
     x = 2
     i = 0
     while True:
-        if (num > 0 and i >= num) or (up_to and x >= up_to):
+        if (num and i >= num) or (up_to and x >= up_to):
             break
         elif x not in memo:
             yield x
