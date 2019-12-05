@@ -3,9 +3,10 @@ def solve():
     largest = 0
     for x in r:
         for y in r:
-            p = x * y
-            if p > largest and p == int(''.join(reversed(str(p)))):
-                largest = p
+            product = x * y
+            r_product = int(''.join(reversed(str(product))))
+            if product == r_product and product > largest:
+                largest = product
     return largest
 
 
