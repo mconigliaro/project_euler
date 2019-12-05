@@ -6,4 +6,4 @@ def test_004():
             p = x * y
             if p > largest and p == int(''.join(reversed(str(p)))):
                 largest = p
-    return largest
+    assert largest == 906609
