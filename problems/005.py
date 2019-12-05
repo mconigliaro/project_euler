@@ -1,4 +1,4 @@
-def test_005():
+def solve():
     divisors = range(11, 19)
     gcd = max(divisors)
     n = gcd + 1
@@ -10,4 +10,8 @@ def test_005():
                 break
             elif d == gcd:
                 found = n
-    assert found == 232792560
+    return found
+
+
+def test():
+    assert solve() == 232792560

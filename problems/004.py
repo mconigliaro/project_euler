@@ -1,4 +1,4 @@
-def test_004():
+def solve():
     r = range(100, 999)
     largest = 0
     for x in r:
@@ -6,4 +6,8 @@ def test_004():
             p = x * y
             if p > largest and p == int(''.join(reversed(str(p)))):
                 largest = p
-    assert largest == 906609
+    return largest
+
+
+def test():
+    assert solve() == 906609
