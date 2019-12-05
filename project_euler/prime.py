@@ -25,4 +25,4 @@ def is_prime(n):
     elif n < 2 or n % 2 == 0:
         return False
     else:
-        return not any([n % x == 0 for x in range(3, int(sqrt(n)) + 1, 2)])
+        return not any(n % x == 0 for x in range(3, int(sqrt(n)) + 1, 2))

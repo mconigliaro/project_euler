@@ -95,5 +95,5 @@ def test_primes_up_to(known_primes):
 
 
 def test_is_prime(known_primes, known_composites):
-    assert all([is_prime(x) for x in known_primes])
-    assert not any([is_prime(x) for x in known_composites])
+    assert all(is_prime(x) for x in known_primes)
+    assert not any(is_prime(x) for x in known_composites)
