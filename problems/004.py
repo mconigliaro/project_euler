@@ -4,6 +4,6 @@ def test_004():
     for x in r:
         for y in r:
             p = x * y
-            if p > largest and p == int(''.join(list(str(p))[::-1])):
+            if p > largest and p == int(''.join(reversed(list(str(p))))):
                 largest = p
     return largest
