@@ -1,4 +1,3 @@
-from math import factorial
 from project_euler.divisor import divisors
 
 
