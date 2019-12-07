@@ -1,4 +1,4 @@
-from project_euler.divisor import divisor_count
+from project_euler.divisor import divisors
 from project_euler.figurate import triangular
 
 
@@ -9,7 +9,7 @@ def solve():
     while not found:
         i += 1
         t = triangular(i)
-        if divisor_count(t) > target:
+        if len(divisors(t)) > target:
             found = t
     return found
 
