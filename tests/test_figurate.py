@@ -9,7 +9,5 @@ def known_triangular():
 
 
 def test_triangular(known_triangular):
-    i = 0
-    for x in known_triangular:
+    for i, x in enumerate(known_triangular):
         assert triangular(i) == known_triangular[i]
-        i += 1
