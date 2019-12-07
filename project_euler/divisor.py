@@ -6,5 +6,6 @@ def divisors(n, proper=False):
     for x in range(1, int(sqrt(n))):
         if n % x == 0:
             d.extend([x, int(n / x)])
-    d = sorted(set(d))
-    return d[0:-1] if proper else d
+    if proper and n in d:
+        d.remove(n)
+    return list(set(d))

@@ -8,7 +8,7 @@ def known_divisors_of_1000():
 
 
 def test_divisors(known_divisors_of_1000):
-    assert divisors(1000) == known_divisors_of_1000
+    assert sorted(divisors(1000)) == known_divisors_of_1000
 
 
 def test_proper_divisors(known_divisors_of_1000):
