@@ -18,7 +18,6 @@ def known_pascals_triangle():
 
 
 def test_pascals_triangle(known_pascals_triangle):
-    print(known_pascals_triangle)
     for i in range(len(known_pascals_triangle)):
         for j in range(len(known_pascals_triangle[0])):
             assert pascals_triangle(i, j) == known_pascals_triangle[i][j]
