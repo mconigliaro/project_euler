@@ -90,8 +90,8 @@ def test_primes(known_primes):
     assert list(primes(len(known_primes))) == known_primes
 
 
-def test_primes_up_to(known_primes):
-    assert list(primes(up_to=100)) == known_primes[:25]
+def test_primes_with_boundaries(known_primes):
+    assert list(primes(end=100)) == known_primes[:25]
 
 
 def test_is_prime(known_primes, known_composites):

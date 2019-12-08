@@ -6,7 +6,7 @@ import re
 def solve():
     longest = (0, 0)
     getcontext().prec = 2048
-    for i in primes(up_to=1000):
+    for i in primes(end=1000):
         match = re.search(r'(\d{2,}?)(?=\1)+', str(Decimal(1) / i))
         if match:
             size = len(match.group())

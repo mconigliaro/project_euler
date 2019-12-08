@@ -15,7 +15,7 @@ def rotations(n):
 
 
 def solve():
-    return sum(1 for i in primes(up_to=1000000)
+    return sum(1 for i in primes(end=1000000)
                if all(is_prime(r) for r in rotations(i)))
 
 

@@ -1,8 +1,8 @@
-def fibonacci(num=None, up_to=None):
+def fibonacci(num=None, end=None):
     a, b = 0, 1
     i = 0
     while True:
-        if (num and i >= num) or (up_to and a >= up_to):
+        if (num and i >= num) or (end and a >= end):
             break
         else:
             yield a

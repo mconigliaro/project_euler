@@ -14,5 +14,5 @@ def test_fibonacci(known_fibonacci):
     assert list(fibonacci(len(known_fibonacci))) == known_fibonacci
 
 
-def test_fibonacci_up_to(known_fibonacci):
-    assert list(fibonacci(up_to=100)) == known_fibonacci[:12]
+def test_fibonacci_with_end(known_fibonacci):
+    assert list(fibonacci(end=100)) == known_fibonacci[:12]

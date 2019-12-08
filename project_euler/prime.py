@@ -1,17 +1,17 @@
 from math import sqrt
 
 
-def primes(num=None, up_to=None):
+def primes(num=None, end=None):
     memo = {}
     x = 2
     i = 0
     while True:
-        if (num and i >= num) or (up_to and x >= up_to):
+        if (num and i >= num) or (end and x >= end):
             break
         elif x not in memo:
-            yield x
             memo[x ** 2] = [x]
             i += 1
+            yield x
         else:
             for p in memo[x]:
                 memo.setdefault(p + x, []).append(p)
