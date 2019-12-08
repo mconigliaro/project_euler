@@ -7,7 +7,7 @@ def rotations(n):
         return [n]
     else:
         r = []
-        digits = deque(i for i in list(str(n)))
+        digits = deque(i for i in str(n))
         for i in range(len(digits) - 1):
             digits.append(digits.popleft())
             r.append(int(''.join(digits)))

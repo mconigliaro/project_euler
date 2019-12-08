@@ -3,7 +3,7 @@ def solve():
     for i in range(1, 1000000):
         d = str(i)
         b = bin(i)[2:]
-        if d == ''.join(reversed(list(d))) and b == ''.join(reversed(list(b))):
+        if d == d[::-1] and b == b[::-1]:
             sum += i
     return sum
 

@@ -4,7 +4,7 @@ def solve():
     for x in r:
         for y in r:
             product = x * y
-            r_product = int(''.join(reversed(str(product))))
+            r_product = int(str(product)[::-1])
             if product == r_product and product > largest:
                 largest = product
     return largest
