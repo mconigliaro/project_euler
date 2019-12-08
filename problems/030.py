@@ -5,4 +5,4 @@ def solve():
 
 
 def test():
-    assert solve() == 4438399
+    assert solve() == 443839
