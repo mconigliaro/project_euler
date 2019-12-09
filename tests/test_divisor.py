@@ -12,6 +12,4 @@ def test_divisors(known_divisors_of_1000):
 
 
 def test_proper_divisors(known_divisors_of_1000):
-    d = divisors(1000, proper=True)
-    assert len(d) == len(known_divisors_of_1000) - 1
-    assert 1000 not in d
+    assert sorted(divisors(1000, proper=True)) == known_divisors_of_1000[:-1]
