@@ -1,4 +1,4 @@
-from functools import reduce
+from math import prod
 from project_euler.prime import is_prime
 
 
@@ -16,7 +16,7 @@ def solve():
                 max_coefficients = [i, j]
                 max_primes = n
 
-    return reduce(lambda x, y: x * y, max_coefficients, 1)
+    return prod(max_coefficients, start=1)
 
 
 def test():

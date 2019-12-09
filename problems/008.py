@@ -1,4 +1,4 @@
-from functools import reduce
+from math import prod
 from re import sub
 
 
@@ -34,7 +34,7 @@ def solve():
     greatest = 0
     while offset + chunk <= len(d):
         digits = [int(x) for x in list(d[offset:offset + chunk])]
-        product = reduce(lambda x, y: x * y, digits, 1)
+        product = prod(digits, start=1)
         if product > greatest:
             greatest = product
         offset += 1
