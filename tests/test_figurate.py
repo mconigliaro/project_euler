@@ -1,5 +1,5 @@
 import pytest
-from project_euler.figurate import triangular
+from project_euler.figurate import is_triangular, triangular
 
 
 @pytest.fixture
@@ -10,4 +10,5 @@ def known_triangular():
 
 def test_triangular(known_triangular):
     for i, x in enumerate(known_triangular):
-        assert triangular(i) == known_triangular[i]
+        assert triangular(i) == x
+        assert is_triangular(x)
