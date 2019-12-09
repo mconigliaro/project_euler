@@ -1,5 +1,4 @@
 from project_euler.data import data
-import re
 
 
 def solve():

@@ -2,5 +2,5 @@
 
 set -eu
 
-cd "$(dirname "${BASH_SOURCE[0]}")/.."
+flake8
 pytest --durations=0 "$@" tests problems/[0-9]*.py

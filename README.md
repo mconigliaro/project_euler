@@ -9,4 +9,4 @@
 
 ## Run Tests and Solve Problems
 
-    ./scripts/test [-k <problem number>]
+    ./test [-k <problem number>]
