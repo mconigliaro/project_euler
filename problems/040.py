@@ -2,7 +2,7 @@ from functools import reduce
 
 
 def solve():
-    digits = [1, 10, 100, 1000, 10000, 100000, 1000000]
+    digits = [10 ** x for x in range(7)]
     digit_str = ""
     n = 1
     while len(digit_str) < digits[-1]:
