@@ -1,6 +1,6 @@
 import pytest
-from project_euler.figurate import is_triangular, triangular, \
-  is_pentagonal, pentagonal
+from project_euler.figurate import triangular, is_triangular, \
+  pentagonal, is_pentagonal, hexagonal, is_hexagonal
 
 
 @pytest.fixture
@@ -27,6 +27,18 @@ def known_not_pentagonal(known_pentagonal):
     return list(set(r) - set(known_pentagonal))
 
 
+@pytest.fixture
+def known_hexagonal():
+    return [1, 6, 15, 28, 45, 66, 91, 120, 153, 190, 231, 276, 325, 378, 435,
+            496, 561, 630, 703, 780, 861, 946]
+
+
+@pytest.fixture
+def known_not_hexagonal(known_hexagonal):
+    r = range(known_hexagonal[0], known_hexagonal[-1])
+    return list(set(r) - set(known_hexagonal))
+
+
 def test_triangular(known_triangular, known_not_triangular):
     for i, x in enumerate(known_triangular):
         assert triangular(i + 1) == x
@@ -41,3 +53,11 @@ def test_pentagonal(known_pentagonal, known_not_pentagonal):
         assert is_pentagonal(x)
 
     assert not any(is_pentagonal(x) for x in known_not_pentagonal)
+
+
+def test_hexagonal(known_hexagonal, known_not_hexagonal):
+    for i, x in enumerate(known_hexagonal):
+        assert hexagonal(i + 1) == x
+        assert is_hexagonal(x)
+
+    assert not any(is_hexagonal(x) for x in known_not_hexagonal)
