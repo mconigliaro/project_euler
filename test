@@ -3,4 +3,4 @@
 set -eu
 
 flake8
-pytest --durations=0 "$@" tests problems/[0-9]*.py
+pytest --capture=no --durations=0 "$@" tests problems/[0-9]*.py
