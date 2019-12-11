@@ -6,8 +6,7 @@ def triangular(n):
 
 
 def is_triangular(n):
-    x = (sqrt(8 * n + 1) - 1) / 2
-    return x == int(x)
+    return ((sqrt(8 * n + 1) - 1) / 2).is_integer()
 
 
 def pentagonal(n):
@@ -15,8 +14,7 @@ def pentagonal(n):
 
 
 def is_pentagonal(n):
-    x = (sqrt(24 * n + 1) + 1) / 6
-    return x == int(x)
+    return ((sqrt(24 * n + 1) + 1) / 6).is_integer()
 
 
 def hexagonal(n):
@@ -24,5 +22,4 @@ def hexagonal(n):
 
 
 def is_hexagonal(n):
-    x = (sqrt(8 * n + 1) + 1) / 4
-    return x == int(x)
+    return ((sqrt(8 * n + 1) + 1) / 4).is_integer()
