@@ -1,6 +1,14 @@
 from math import sqrt
 
 
+def cubic(n):
+    return n ** 3
+
+
+def is_cubic(n):
+    return int(round(n ** (1 / 3))) ** 3 == n
+
+
 def triangular(n):
     return int(n * (n + 1) / 2)
 
