@@ -1,4 +1,4 @@
-from project_euler.pascals_triangle import pascals_triangle
+from project_euler.pascal import pascals_triangle
 
 
 def solve():
