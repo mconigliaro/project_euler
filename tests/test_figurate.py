@@ -14,7 +14,7 @@ def known_cubic():
 @pytest.fixture
 def known_not_cubic(known_cubic):
     r = range(known_cubic[0], known_cubic[-1])
-    return list(set(r) - set(known_cubic))
+    return [x for x in r if x not in r]
 
 
 @pytest.fixture
@@ -26,7 +26,7 @@ def known_triangular():
 @pytest.fixture
 def known_not_triangular(known_triangular):
     r = range(known_triangular[0], known_triangular[-1])
-    return list(set(r) - set(known_triangular))
+    return [x for x in r if x not in r]
 
 
 @pytest.fixture
@@ -38,7 +38,7 @@ def known_pentagonal():
 @pytest.fixture
 def known_not_pentagonal(known_pentagonal):
     r = range(known_pentagonal[0], known_pentagonal[-1])
-    return list(set(r) - set(known_pentagonal))
+    return [x for x in r if x not in r]
 
 
 @pytest.fixture
@@ -50,7 +50,7 @@ def known_hexagonal():
 @pytest.fixture
 def known_not_hexagonal(known_hexagonal):
     r = range(known_hexagonal[0], known_hexagonal[-1])
-    return list(set(r) - set(known_hexagonal))
+    return [x for x in r if x not in r]
 
 
 def test_cubic(known_cubic, known_not_cubic):

@@ -21,7 +21,8 @@ def known_primes():
 
 @pytest.fixture
 def known_composites(known_primes):
-    return list(set(range(known_primes[-1])) - set(known_primes))
+    r = range(known_primes[0], known_primes[-1])
+    return [x for x in r if x not in r]
 
 
 def test_primes(known_primes):
