@@ -22,14 +22,14 @@ def known_primes():
 @pytest.fixture
 def known_composites(known_primes):
     r = range(known_primes[0], known_primes[-1])
-    return [x for x in r if x not in r]
+    return [x for x in r if x not in known_primes]
 
 
 def test_primes(known_primes):
     assert list(primes(len(known_primes))) == known_primes
 
 
-def test_primes_with_boundaries(known_primes):
+def test_primes_with_end(known_primes):
     assert list(primes(end=100)) == known_primes[:25]
 
 

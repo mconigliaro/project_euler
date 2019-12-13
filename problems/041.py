@@ -1,11 +1,12 @@
-from itertools import permutations
+from project_euler.pandigital import pandigital
 from project_euler.prime import is_prime
 
 
 def solve():
     for i in reversed(range(1, 10)):
-        for j in reversed(sorted(permutations(range(1, i + 1)))):
-            n = int(''.join(str(x) for x in j))
+        c = ''.join(str(x) for x in range(1, i + 1))
+        for j in reversed(list(pandigital(chars=c))):
+            n = int(j)
             if is_prime(n):
                 return n
 
