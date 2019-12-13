@@ -1,12 +1,12 @@
+from math import prod
+from project_euler.pythagoras import pythagorean_triplets
+
+
 def solve():
     n = 1000
-    for i in range(3, n):
-        for j in range(4, n):
-            a = j ** 2 - i ** 2
-            b = 2 * i * j
-            c = i ** 2 + j ** 2
-            if a + b + c == n:
-                return a * b * c
+    for x in pythagorean_triplets(n):
+        if sum(x) == n:
+            return prod(x)
 
 
 def test():
