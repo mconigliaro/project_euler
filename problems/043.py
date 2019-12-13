@@ -3,7 +3,7 @@ from project_euler.prime import primes
 
 
 def solve():
-    c = '1234567890'
+    c = '0123456789'
     chunk_by = 3
     chunks = len(c) - chunk_by + 1
     p = list(primes(chunks))

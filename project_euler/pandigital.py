@@ -1,8 +1,8 @@
 from itertools import permutations
 
 
-def pandigital(num=None, chars='1234567890'):
-    for i, n in enumerate(sorted(permutations(chars))):
+def pandigital(num=None, chars='0123456789'):
+    for i, n in enumerate(permutations(chars)):
         n = ''.join(n)
         if not num or num and i < num:
             yield n
@@ -10,5 +10,5 @@ def pandigital(num=None, chars='1234567890'):
             return n
 
 
-def is_pandigital(n, chars='1234567890'):
-    return set(chars) - set(str(n)) == set()
+def is_pandigital(n, chars='0123456789'):
+    return set(chars).issubset(set(str(n)))
