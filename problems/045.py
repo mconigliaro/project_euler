@@ -1,15 +1,14 @@
+from itertools import count
 from project_euler.figurate import pentagonal, hexagonal
 
 
 def solve():
     h = []
-    i = 144
-    while True:
+    for i in count(144):
         p = pentagonal(i)
         h.append(hexagonal(i))
         if p in h:
             return p
-        i += 1
 
 
 def test():

@@ -1,17 +1,14 @@
+from itertools import count
 from project_euler.divisor import divisors
 from project_euler.figurate import triangular
 
 
 def solve():
     target = 500
-    i = 0
-    found = None
-    while not found:
-        i += 1
+    for i in count():
         t = triangular(i)
         if len(divisors(t)) > target:
-            found = t
-    return found
+            return t
 
 
 def test():

@@ -1,16 +1,15 @@
+from itertools import count
 from project_euler.figurate import pentagonal, is_pentagonal
 
 
 def solve():
     p_hist = []
-    i = 1
-    while True:
+    for i in count(1):
         p_curr = pentagonal(i)
         for p in p_hist:
             if is_pentagonal(p_curr - p) and is_pentagonal(p_curr + p):
                 return p_curr - p
         p_hist.append(p_curr)
-        i += 1
 
 
 def test():
