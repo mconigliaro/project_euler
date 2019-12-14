@@ -1,7 +1,6 @@
 def solve():
     numbers = []
-    p = 1
-    while p < 22:  # FIXME
+    for p in range(1, 23):  # FIXME: How do we know the upper bound?
         i = 1
         n = 1
         while len(str(n)) <= p:
@@ -10,7 +9,6 @@ def solve():
             i = i + 1
             n = i ** p
         i = 0
-        p += 1
     return len(numbers)
 
 
