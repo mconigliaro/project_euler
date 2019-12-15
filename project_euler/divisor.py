@@ -9,7 +9,3 @@ def divisors(n, proper=False):
     if not proper:
         d.append(n)
     return list(set(d))
-
-
-def greatest_common_divisor(x, y):
-    return max(set(divisors(x)).intersection(set(divisors(y))))
