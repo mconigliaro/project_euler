@@ -2,7 +2,7 @@ from project_euler.pandigital import pandigital
 
 
 def solve():
-    return int(list(pandigital(1000000))[-1])
+    return list(pandigital(1000000))[-1]
 
 
 def test():
