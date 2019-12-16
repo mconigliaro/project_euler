@@ -16,7 +16,7 @@ def test_fibonacci(known_fibonaccis):
 
 
 def test_fibonaccis(known_fibonaccis):
-    assert list(fibonaccis(len(known_fibonaccis))) == known_fibonaccis
+    assert list(fibonaccis(num=len(known_fibonaccis))) == known_fibonaccis
 
 
 def test_fibonaccis_with_end(known_fibonaccis):
