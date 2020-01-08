@@ -9,7 +9,7 @@ def solve():
         cat_prod = ''
         j = 1
         while len(cat_prod) < len_chars:
-            cat_prod += ''.join([str(i * j)])
+            cat_prod += ''.join(str(i * j))
             j += 1
         if len(cat_prod) == len_chars and is_pandigital(cat_prod, chars):
             cat_prods.append(int(cat_prod))

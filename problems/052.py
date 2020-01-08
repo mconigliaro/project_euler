@@ -1,9 +1,10 @@
+from itertools import count
+
+
 def solve():
-    i = 1
-    while True:
+    for i in count(1):
         if all(sorted(str((i * j))) == sorted(str(i)) for j in range(2, 6)):
             return i
-        i += 1
 
 
 def test():

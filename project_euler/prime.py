@@ -1,11 +1,11 @@
+from itertools import count
 from math import sqrt
 
 
 def primes(num=None, end=None):
     memo = {}
-    x = 2
     i = 0
-    while True:
+    for x in count(2):
         if (num and i >= num) or (end and x >= end):
             break
         elif x not in memo:
@@ -16,7 +16,6 @@ def primes(num=None, end=None):
             for p in memo[x]:
                 memo.setdefault(p + x, []).append(p)
             del memo[x]
-        x += 1
 
 
 def is_prime(n):
