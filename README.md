@@ -16,4 +16,4 @@
 
 ## Run Tests and Solve Problems
 
-    ./test [-k <problem number>]
+    pytest [-k <problem number>]

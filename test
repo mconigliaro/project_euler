@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-set -eu
-
-flake8
-pytest --capture=no --durations=0 "$@" tests problems/[0-9]*.py
