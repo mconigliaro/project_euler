@@ -2,6 +2,8 @@
 
 [![](http://projecteuler.net/profile/mconigliaro.png)](http://projecteuler.net)
 
+[![project_euler](https://circleci.com/gh/mconigliaro/project_euler.svg?style=svg)](https://circleci.com/gh/mconigliaro/project_euler)
+
 ## Goals
 
 - No external libraries (Python standard library only)
