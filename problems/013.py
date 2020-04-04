@@ -1,9 +1,9 @@
-from project_euler.data import data
+import project_euler.data as dat
 
 
 def solve():
     numbers = []
-    for l in data('problems/data/013.txt'):
+    for l in dat.data('problems/data/013.txt'):
         numbers.append(int(l))
     return int(str(sum(numbers))[0:10])
 

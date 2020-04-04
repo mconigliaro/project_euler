@@ -1,4 +1,4 @@
-from project_euler.data import data
+import project_euler.data as dat
 
 
 def traverse(matrix, path=[], paths=[], x=0, y=0):
@@ -19,7 +19,7 @@ def traverse(matrix, path=[], paths=[], x=0, y=0):
 
 def solve():
     matrix = []
-    for l in data('problems/data/018.txt'):
+    for l in dat.data('problems/data/018.txt'):
         matrix.append([int(x) for x in l.split(' ')])
     return max(sum(x) for x in traverse(matrix))
 

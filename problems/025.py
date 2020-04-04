@@ -1,8 +1,8 @@
-from project_euler.fibonacci import fibonaccis
+import project_euler.fibonacci as fib
 
 
 def solve():
-    for i, x in enumerate(fibonaccis()):
+    for i, x in enumerate(fib.fibonaccis()):
         if len(str(x)) == 1000:
             return i
 

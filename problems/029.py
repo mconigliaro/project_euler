@@ -1,9 +1,10 @@
+import itertools as it
+
+
 def solve():
-    r = range(2, 101)
     terms = []
-    for i in r:
-        for j in r:
-            terms.append(i ** j)
+    for i, j in it.product(range(2, 101), repeat=2):
+        terms.append(i ** j)
     return len(sorted(set(terms)))
 
 

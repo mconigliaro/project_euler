@@ -1,13 +1,13 @@
-from project_euler.prime import primes
-from decimal import getcontext, Decimal
+import project_euler.prime as pr
+import decimal as dec
 import re
 
 
 def solve():
     longest = (0, 0)
-    getcontext().prec = 2048
-    for i in primes(end=1000):
-        match = re.search(r'(\d{2,}?)(?=\1)+', str(Decimal(1) / i))
+    dec.getcontext().prec = 2048
+    for i in pr.primes(end=1000):
+        match = re.search(r'(\d{2,}?)(?=\1)+', str(dec.Decimal(1) / i))
         if match:
             size = len(match.group())
             if size > longest[1]:

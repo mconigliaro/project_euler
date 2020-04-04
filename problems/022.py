@@ -1,11 +1,11 @@
-from project_euler.data import data
-from project_euler.string import string_value
+import project_euler.data as dat
+import project_euler.string as st
 
 
 def solve():
-    d = data('problems/data/022.txt')
+    d = dat.data('problems/data/022.txt')
     names = sorted(x.replace('"', '') for x in d[0].split(','))
-    return sum(string_value(n) * (i + 1) for i, n in enumerate(names))
+    return sum(st.string_value(n) * (i + 1) for i, n in enumerate(names))
 
 
 def test():

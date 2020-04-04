@@ -1,4 +1,4 @@
-from project_euler.pandigital import is_pandigital
+import project_euler.pandigital as pd
 
 
 def solve():
@@ -11,7 +11,7 @@ def solve():
         while len(cat_prod) < len_chars:
             cat_prod += ''.join(str(i * j))
             j += 1
-        if len(cat_prod) == len_chars and is_pandigital(cat_prod, chars):
+        if len(cat_prod) == len_chars and pd.is_pandigital(cat_prod, chars):
             cat_prods.append(int(cat_prod))
     return max(cat_prods)
 

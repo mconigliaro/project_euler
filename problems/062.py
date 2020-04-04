@@ -1,11 +1,11 @@
-from itertools import count
-from project_euler.figurate import cubic
+import itertools as it
+import project_euler.figurate as fig
 
 
 def solve():
     cubes = {}
-    for i in count(1):
-        cube = cubic(i)
+    for i in it.count(1):
+        cube = fig.cubic(i)
         key = ''.join(sorted(str(cube)))
         cubes.setdefault(key, []).append(cube)
         if len(cubes[key]) == 5:

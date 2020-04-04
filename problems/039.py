@@ -1,10 +1,10 @@
-from project_euler.pythagoras import pythagorean_triplets
+import project_euler.pythagoras as pyt
 
 
 def solve():
     m = 1000
     triplets = {}
-    for x in pythagorean_triplets(m / 2):
+    for x in pyt.pythagorean_triplets(m / 2):
         key = sum(x)
         if key <= m:
             triplets.setdefault(key, []).append(x)

@@ -1,4 +1,4 @@
-from re import sub
+import re
 
 
 def solve():
@@ -32,7 +32,7 @@ def solve():
 
         all_words.append(' and '.join(words))
 
-    return len(sub(' ', '', ' '.join(all_words)))
+    return len(re.sub(' ', '', ' '.join(all_words)))
 
 
 def test():

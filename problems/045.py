@@ -1,12 +1,12 @@
-from itertools import count
-from project_euler.figurate import pentagonal, hexagonal
+import itertools as it
+import project_euler.figurate as fig
 
 
 def solve():
     h = []
-    for i in count(144):
-        p = pentagonal(i)
-        h.append(hexagonal(i))
+    for i in it.count(144):
+        p = fig.pentagonal(i)
+        h.append(fig.hexagonal(i))
         if p in h:
             return p
 

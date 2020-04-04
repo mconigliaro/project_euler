@@ -1,9 +1,9 @@
-from project_euler.prime import primes, is_prime
+import project_euler.prime as pr
 
 
 def solve():
     m = 1000000
-    p = list(primes(end=m))
+    p = list(pr.primes(end=m))
     p_length = len(p)
 
     last = 0
@@ -13,9 +13,9 @@ def solve():
         s = sum(p[0:last])
 
     s = 0
-    while not is_prime(s):
+    while not pr.is_prime(s):
         offset = 0
-        while offset + last <= p_length and not is_prime(s):
+        while offset + last <= p_length and not pr.is_prime(s):
             s = sum(p[offset:last])
             if s > m:
                 break

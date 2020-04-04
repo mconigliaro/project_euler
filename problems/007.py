@@ -1,8 +1,8 @@
-from project_euler.prime import primes
+import project_euler.prime as pr
 
 
 def solve():
-    return list(primes(10001))[-1]
+    return list(pr.primes(10001))[-1]
 
 
 def test():

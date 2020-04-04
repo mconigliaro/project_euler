@@ -1,15 +1,15 @@
-from math import prod
-from project_euler.data import data
+import math
+import project_euler.data as dat
 
 
 def solve():
-    d = ''.join(data('problems/data/008.txt'))
+    d = ''.join(dat.data('problems/data/008.txt'))
     offset = 0
     chunk = 13
     greatest = 0
     while offset + chunk <= len(d):
         digits = [int(x) for x in list(d[offset:offset + chunk])]
-        product = prod(digits, start=1)
+        product = math.prod(digits, start=1)
         if product > greatest:
             greatest = product
         offset += 1

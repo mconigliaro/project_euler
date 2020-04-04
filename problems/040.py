@@ -1,4 +1,4 @@
-from functools import reduce
+import functools as ft
 
 
 def solve():
@@ -8,7 +8,7 @@ def solve():
     while len(digit_str) < digits[-1]:
         digit_str += str(n)
         n += 1
-    return reduce(lambda x, y: x * int(digit_str[y - 1:y]), digits)
+    return ft.reduce(lambda x, y: x * int(digit_str[y - 1:y]), digits)
 
 
 def test():

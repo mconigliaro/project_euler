@@ -1,19 +1,19 @@
-from project_euler.fibonacci import fibonaccis
-from project_euler.int import int_digits
-from project_euler.pandigital import is_pandigital
+import project_euler.fibonacci as fib
+import project_euler.int as it
+import project_euler.pandigital as pd
 
 
 def solve():
     start = 329000  # FIXME: Improve performance so we can start at 0
     digits = list(range(1, 10))
     len_digits = len(digits)
-    for i, f in enumerate(fibonaccis(start=start), start=start):
+    for i, f in enumerate(fib.fibonaccis(start=start), start=start):
         if i % 10000 == 0:
             print(f'{i}')
-        last = set(int_digits(f, len_digits * -1))
-        if is_pandigital(last, digits):
-            first = list(int_digits(f, len_digits))
-            if is_pandigital(first, digits):
+        last = set(it.int_digits(f, len_digits * -1))
+        if pd.is_pandigital(last, digits):
+            first = list(it.int_digits(f, len_digits))
+            if pd.is_pandigital(first, digits):
                 return i
 
 

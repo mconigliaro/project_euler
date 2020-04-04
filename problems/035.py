@@ -1,5 +1,5 @@
-from collections import deque
-from project_euler.prime import primes, is_prime
+import collections as col
+import project_euler.prime as pr
 
 
 def rotations(n):
@@ -7,7 +7,7 @@ def rotations(n):
         return [n]
     else:
         r = []
-        digits = deque(i for i in str(n))
+        digits = col.deque(i for i in str(n))
         for i in range(len(digits) - 1):
             digits.append(digits.popleft())
             r.append(int(''.join(digits)))
@@ -15,8 +15,8 @@ def rotations(n):
 
 
 def solve():
-    return sum(1 for i in primes(end=1000000)
-               if all(is_prime(r) for r in rotations(i)))
+    return sum(1 for i in pr.primes(end=1000000)
+               if all(pr.is_prime(r) for r in rotations(i)))
 
 
 def test():

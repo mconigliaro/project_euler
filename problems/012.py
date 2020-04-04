@@ -1,13 +1,13 @@
-from itertools import count
-from project_euler.divisor import divisors
-from project_euler.figurate import triangular
+import itertools as it
+import project_euler.divisor as div
+import project_euler.figurate as fig
 
 
 def solve():
     target = 500
-    for i in count():
-        t = triangular(i)
-        if len(divisors(t)) > target:
+    for i in it.count():
+        t = fig.triangular(i)
+        if len(div.divisors(t)) > target:
             return t
 
 

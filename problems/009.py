@@ -1,12 +1,12 @@
-from math import prod
-from project_euler.pythagoras import pythagorean_triplets
+import math
+import project_euler.pythagoras as pyt
 
 
 def solve():
     n = 1000
-    for x in pythagorean_triplets(n):
+    for x in pyt.pythagorean_triplets(n):
         if sum(x) == n:
-            return prod(x)
+            return math.prod(x)
 
 
 def test():

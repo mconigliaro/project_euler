@@ -1,8 +1,8 @@
-from project_euler.pandigital import pandigital
+import project_euler.pandigital as pd
 
 
 def solve():
-    return list(pandigital(1000000))[-1]
+    return list(pd.pandigital(1000000))[-1]
 
 
 def test():
