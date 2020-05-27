@@ -10,10 +10,10 @@ def pandigital(num=None, digits=list(range(10))):
         else:
             n = sum(n * (10 ** i) for i, n in enumerate(reversed(digit_list)))
 
-        if not num or (num and i < num):
-            yield n
-        else:
-            return n
+        if num and i >= num:
+            break
+
+        yield n
 
 
 def is_pandigital(x, digits=list(range(10))):
