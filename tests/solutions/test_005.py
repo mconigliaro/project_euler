@@ -1,4 +1,4 @@
-def solve():
+def solution():
     divisors = range(11, 19)
     gcd = max(divisors)
     n = gcd + 1
@@ -14,4 +14,4 @@ def solve():
 
 
 def test():
-    assert solve() == 232792560
+    assert solution() == 232792560

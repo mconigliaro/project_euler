@@ -2,7 +2,7 @@ import math
 import project_euler.pythagoras as pyt
 
 
-def solve():
+def solution():
     n = 1000
     for x in pyt.pythagorean_triplets(n):
         if sum(x) == n:
@@ -10,4 +10,4 @@ def solve():
 
 
 def test():
-    assert solve() == 31875000
+    assert solution() == 31875000

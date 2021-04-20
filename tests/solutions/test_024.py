@@ -1,9 +1,9 @@
 import project_euler.pandigital as pd
 
 
-def solve():
+def solution():
     return list(pd.pandigital(1000000))[-1]
 
 
 def test():
-    assert solve() == 2783915460
+    assert solution() == 2783915460

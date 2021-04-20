@@ -1,9 +1,9 @@
 import project_euler.pascal as pas
 
 
-def solve():
+def solution():
     return pas.pascals_triangle(20 * 2, 20)
 
 
 def test():
-    assert solve() == 137846528820
+    assert solution() == 137846528820

@@ -1,7 +1,7 @@
 import project_euler.divisor as div
 
 
-def solve():
+def solution():
     amicable = []
     for i in range(1, 10001):
         a = sum(div.divisors(i, proper=True))
@@ -13,4 +13,4 @@ def solve():
 
 
 def test():
-    assert solve() == 31626
+    assert solution() == 31626

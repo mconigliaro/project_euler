@@ -2,7 +2,7 @@ import itertools as it
 import project_euler.figurate as fig
 
 
-def solve():
+def solution():
     h = []
     for i in it.count(144):
         p = fig.pentagonal(i)
@@ -12,4 +12,4 @@ def solve():
 
 
 def test():
-    assert solve() == 1533776805
+    assert solution() == 1533776805

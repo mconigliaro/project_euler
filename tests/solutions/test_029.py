@@ -1,7 +1,7 @@
 import itertools as it
 
 
-def solve():
+def solution():
     terms = []
     for i, j in it.product(range(2, 101), repeat=2):
         terms.append(i ** j)
@@ -9,4 +9,4 @@ def solve():
 
 
 def test():
-    assert solve() == 9183
+    assert solution() == 9183

@@ -1,7 +1,7 @@
 import project_euler.prime as pr
 
 
-def solve():
+def solution():
     p = [p for p in pr.primes(end=9999)
          if p >= 1000 and p not in [1487, 4817, 8147]]
     d = {}
@@ -14,4 +14,4 @@ def solve():
 
 
 def test():
-    assert solve() == 296962999629
+    assert solution() == 296962999629

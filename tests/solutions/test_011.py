@@ -2,7 +2,7 @@ import itertools as it
 import project_euler.data as dat
 
 
-def solve():
+def solution():
     matrix = []
     for line in dat.data('tests/data/011.txt'):
         matrix.append([int(x) for x in line.split(' ')])
@@ -38,4 +38,4 @@ def solve():
 
 
 def test():
-    assert solve() == 70600674
+    assert solution() == 70600674

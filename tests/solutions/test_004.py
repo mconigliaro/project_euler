@@ -1,7 +1,7 @@
 import itertools as it
 
 
-def solve():
+def solution():
     largest = 0
     for x, y in it.product(range(100, 999), repeat=2):
         product = x * y
@@ -12,4 +12,4 @@ def solve():
 
 
 def test():
-    assert solve() == 906609
+    assert solution() == 906609

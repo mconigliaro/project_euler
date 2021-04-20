@@ -1,9 +1,9 @@
 import project_euler.prime as pr
 
 
-def solve():
+def solution():
     return list(pr.primes(10001))[-1]
 
 
 def test():
-    assert solve() == 104743
+    assert solution() == 104743

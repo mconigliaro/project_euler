@@ -1,4 +1,4 @@
-def solve():
+def solution():
     numbers = []
     for p in range(1, 23):  # FIXME: How do we know the upper bound?
         i = 1
@@ -13,4 +13,4 @@ def solve():
 
 
 def test():
-    assert solve() == 49
+    assert solution() == 49

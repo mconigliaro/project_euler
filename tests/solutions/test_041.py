@@ -2,7 +2,7 @@ import project_euler.pandigital as pd
 import project_euler.prime as pr
 
 
-def solve():
+def solution():
     for i in reversed(range(1, 10)):
         digits = list(reversed(range(1, i + 1)))
         for j in pd.pandigital(digits=digits):
@@ -11,4 +11,4 @@ def solve():
 
 
 def test():
-    assert solve() == 7652413
+    assert solution() == 7652413

@@ -1,4 +1,4 @@
-def solve():
+def solution():
     sum = 0
     for i in range(1, 1000000):
         d = str(i)
@@ -9,4 +9,4 @@ def solve():
 
 
 def test():
-    assert solve() == 872187
+    assert solution() == 872187

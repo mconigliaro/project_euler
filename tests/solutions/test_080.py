@@ -1,7 +1,7 @@
 import decimal as dec
 
 
-def solve():
+def solution():
     s = 0
     dec.getcontext().prec = 102
     for i in range(100):
@@ -13,4 +13,4 @@ def solve():
 
 
 def test():
-    assert solve() == 40886
+    assert solution() == 40886

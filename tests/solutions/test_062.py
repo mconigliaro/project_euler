@@ -2,7 +2,7 @@ import itertools as it
 import project_euler.figurate as fig
 
 
-def solve():
+def solution():
     cubes = {}
     for i in it.count(1):
         cube = fig.cubic(i)
@@ -13,4 +13,4 @@ def solve():
 
 
 def test():
-    assert solve() == 127035954683
+    assert solution() == 127035954683

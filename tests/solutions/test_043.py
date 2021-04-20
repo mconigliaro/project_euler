@@ -2,7 +2,7 @@ import project_euler.pandigital as pd
 import project_euler.prime as pr
 
 
-def solve():
+def solution():
     digits = list(str(x) for x in range(10))
     chunk_by = 3
     chunks = len(digits) - chunk_by + 1
@@ -16,4 +16,4 @@ def solve():
 
 
 def test():
-    assert solve() == 16695334890
+    assert solution() == 16695334890

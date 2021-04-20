@@ -2,7 +2,7 @@ import math
 import project_euler.prime as pr
 
 
-def solve():
+def solution():
     max_coefficients = []
     max_primes = 0
 
@@ -20,4 +20,4 @@ def solve():
 
 
 def test():
-    assert solve() == -59231
+    assert solution() == -59231

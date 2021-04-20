@@ -3,7 +3,7 @@ import decimal as dec
 import re
 
 
-def solve():
+def solution():
     longest = (0, 0)
     dec.getcontext().prec = 2048
     for i in pr.primes(end=1000):
@@ -16,4 +16,4 @@ def solve():
 
 
 def test():
-    assert solve() == 983
+    assert solution() == 983

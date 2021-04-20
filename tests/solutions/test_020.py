@@ -1,9 +1,9 @@
 import math
 
 
-def solve():
+def solution():
     return sum(int(x) for x in str(math.factorial(100)))
 
 
 def test():
-    assert solve() == 648
+    assert solution() == 648

@@ -1,7 +1,7 @@
 import project_euler.pythagoras as pyt
 
 
-def solve():
+def solution():
     m = 1000
     triplets = {}
     for x in pyt.pythagorean_triplets(m / 2):
@@ -19,4 +19,4 @@ def solve():
 
 
 def test():
-    assert solve() == 840
+    assert solution() == 840

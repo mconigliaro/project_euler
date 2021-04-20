@@ -17,7 +17,7 @@ def traverse(matrix, path=[], paths=[], x=0, y=0):
     return paths
 
 
-def solve():
+def solution():
     matrix = []
     for line in dat.data('tests/data/018.txt'):
         matrix.append([int(x) for x in line.split(' ')])
@@ -25,4 +25,4 @@ def solve():
 
 
 def test():
-    assert solve() == 1074
+    assert solution() == 1074

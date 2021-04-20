@@ -1,7 +1,7 @@
 import re
 
 
-def solve():
+def solution():
     digits = ['', 'one', 'two', 'three', 'four', 'five', 'six', 'seven',
               'eight', 'nine']
     teens = ['', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen',
@@ -36,4 +36,4 @@ def solve():
 
 
 def test():
-    assert solve() == 21124
+    assert solution() == 21124

@@ -1,7 +1,7 @@
 import project_euler.prime as pr
 
 
-def solve():
+def solution():
     m = 1000000
     p = list(pr.primes(end=m))
     p_length = len(p)
@@ -26,4 +26,4 @@ def solve():
 
 
 def test():
-    assert solve() == 997651
+    assert solution() == 997651

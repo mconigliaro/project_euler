@@ -3,7 +3,7 @@ import project_euler.int as it
 import project_euler.pandigital as pd
 
 
-def solve():
+def solution():
     start = 329000  # FIXME: Improve performance so we can start at 0
     digits = list(range(1, 10))
     len_digits = len(digits)
@@ -18,4 +18,4 @@ def solve():
 
 
 def test():
-    assert solve() == 329468
+    assert solution() == 329468

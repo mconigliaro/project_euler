@@ -1,7 +1,7 @@
 import project_euler.data as dat
 
 
-def solve():
+def solution():
     numbers = []
     for line in dat.data('tests/data/013.txt'):
         numbers.append(int(line))
@@ -9,4 +9,4 @@ def solve():
 
 
 def test():
-    assert solve() == 5537376230
+    assert solution() == 5537376230

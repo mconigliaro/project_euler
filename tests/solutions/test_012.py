@@ -3,7 +3,7 @@ import project_euler.divisor as div
 import project_euler.figurate as fig
 
 
-def solve():
+def solution():
     target = 500
     for i in it.count():
         t = fig.triangular(i)
@@ -12,4 +12,4 @@ def solve():
 
 
 def test():
-    assert solve() == 76576500
+    assert solution() == 76576500

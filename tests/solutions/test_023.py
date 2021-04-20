@@ -2,7 +2,7 @@ import itertools as it
 import project_euler.divisor as div
 
 
-def solve():
+def solution():
     m = 28123
     abundant = [x for x in range(12, m)
                 if sum(div.divisors(x, proper=True)) > x]
@@ -11,4 +11,4 @@ def solve():
 
 
 def test():
-    assert solve() == 4179871
+    assert solution() == 4179871

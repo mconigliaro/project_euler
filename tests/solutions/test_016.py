@@ -1,6 +1,6 @@
-def solve():
+def solution():
     return sum(int(x) for x in str(2 ** 1000))
 
 
 def test():
-    assert solve() == 1366
+    assert solution() == 1366

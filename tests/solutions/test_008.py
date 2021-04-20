@@ -2,7 +2,7 @@ import math
 import project_euler.data as dat
 
 
-def solve():
+def solution():
     d = ''.join(dat.data('tests/data/008.txt'))
     offset = 0
     chunk = 13
@@ -17,4 +17,4 @@ def solve():
 
 
 def test():
-    assert solve() == 23514624000
+    assert solution() == 23514624000

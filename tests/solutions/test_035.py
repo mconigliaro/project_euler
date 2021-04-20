@@ -14,10 +14,10 @@ def rotations(n):
         return r
 
 
-def solve():
+def solution():
     return sum(1 for i in pr.primes(end=1000000)
                if all(pr.is_prime(r) for r in rotations(i)))
 
 
 def test():
-    assert solve() == 55
+    assert solution() == 55

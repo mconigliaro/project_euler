@@ -1,7 +1,7 @@
 import project_euler.prime as pr
 
 
-def solve():
+def solution():
     t_primes = []
     for p in pr.primes():
         if p > 7:
@@ -17,4 +17,4 @@ def solve():
 
 
 def test():
-    assert solve() == 748317
+    assert solution() == 748317

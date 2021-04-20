@@ -1,7 +1,7 @@
 import project_euler.pandigital as pd
 
 
-def solve():
+def solution():
     cat_prods = []
     chars = '123456789'
     len_chars = len(chars)
@@ -17,4 +17,4 @@ def solve():
 
 
 def test():
-    assert solve() == 932718654
+    assert solution() == 932718654

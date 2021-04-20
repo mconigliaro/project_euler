@@ -1,4 +1,4 @@
-def solve():
+def solution():
     memo = {}
     max_start = None
     max_len = 0
@@ -27,4 +27,4 @@ def solve():
 
 
 def test():
-    assert solve() == 837799
+    assert solution() == 837799

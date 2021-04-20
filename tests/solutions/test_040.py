@@ -1,7 +1,7 @@
 import functools as ft
 
 
-def solve():
+def solution():
     digits = [10 ** x for x in range(7)]
     digit_str = ""
     n = 1
@@ -12,4 +12,4 @@ def solve():
 
 
 def test():
-    assert solve() == 210
+    assert solution() == 210
