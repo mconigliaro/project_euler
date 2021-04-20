@@ -4,7 +4,7 @@ import project_euler.string as st
 
 
 def solve():
-    d = dat.data('problems/data/042.txt')
+    d = dat.data('tests/data/042.txt')
     words = [x.replace('"', '') for x in d[0].split(',')]
     return len([x for x in words if fig.is_triangular(st.string_value(x))])
 

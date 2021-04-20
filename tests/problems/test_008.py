@@ -3,7 +3,7 @@ import project_euler.data as dat
 
 
 def solve():
-    d = ''.join(dat.data('problems/data/008.txt'))
+    d = ''.join(dat.data('tests/data/008.txt'))
     offset = 0
     chunk = 13
     greatest = 0
