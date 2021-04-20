@@ -1,3 +1,3 @@
 def data(file):
     with open(file, 'r') as f:
-        return [l.strip() for l in f.readlines()]
+        return [line.strip() for line in f.readlines()]
