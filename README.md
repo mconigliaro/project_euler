@@ -6,8 +6,9 @@
 
 ## Goals
 
+- All original solutions
 - No external libraries (Python standard library only)
-- Solutions should complete in less than 10 seconds
+- Reasonably quick solutions (&lt;10s each)
 
 ## Getting Started
 
