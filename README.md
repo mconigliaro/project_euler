@@ -12,9 +12,8 @@
 
 ## Getting Started
 
-    pip install pipenv
-    pipenv install
-    pipenv shell
+    poetry install
+    poetry shell
     ...
 
 ## Run Tests and Solve Problems
