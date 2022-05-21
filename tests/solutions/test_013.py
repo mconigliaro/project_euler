@@ -3,7 +3,7 @@ import project_euler.data as dat
 
 def solution():
     numbers = []
-    for line in dat.data('tests/data/013.txt'):
+    for line in dat.data("tests/data/013.txt"):
         numbers.append(int(line))
     return int(str(sum(numbers))[0:10])
 

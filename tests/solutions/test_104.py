@@ -9,7 +9,7 @@ def solution():
     len_digits = len(digits)
     for i, f in enumerate(fib.fibonaccis(start=start), start=start):
         if i % 10000 == 0:
-            print(f'{i}')
+            print(f"{i}")
         last = set(it.int_digits(f, len_digits * -1))
         if pd.is_pandigital(last, digits):
             first = list(it.int_digits(f, len_digits))

@@ -9,7 +9,7 @@ def solution():
     for i in range(-1000, 1000):
         for j in range(-1000, 1000):
             n = 0
-            while pr.is_prime(n ** 2 + i * n + j):
+            while pr.is_prime(n**2 + i * n + j):
                 n += 1
 
             if n > max_primes:

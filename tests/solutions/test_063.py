@@ -7,7 +7,7 @@ def solution():
             if len(str(n)) == p:
                 numbers.append(n)
             i = i + 1
-            n = i ** p
+            n = i**p
         i = 0
     return len(numbers)
 

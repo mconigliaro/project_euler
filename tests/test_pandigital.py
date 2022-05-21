@@ -10,9 +10,32 @@ def digits():
 
 @pytest.fixture
 def known_pandigital():
-    return [1234, 1243, 1324, 1342, 1423, 1432, 2134, 2143, 2314, 2341, 2413,
-            2431, 3124, 3142, 3214, 3241, 3412, 3421, 4123, 4132, 4213, 4231,
-            4312, 4321]
+    return [
+        1234,
+        1243,
+        1324,
+        1342,
+        1423,
+        1432,
+        2134,
+        2143,
+        2314,
+        2341,
+        2413,
+        2431,
+        3124,
+        3142,
+        3214,
+        3241,
+        3412,
+        3421,
+        4123,
+        4132,
+        4213,
+        4231,
+        4312,
+        4321,
+    ]
 
 
 @pytest.fixture
@@ -27,7 +50,7 @@ def test_pandigital(digits, known_pandigital):
 
 
 def test_is_pandigital(digits, known_pandigital, known_not_pandigital):
-    assert all(is_pandigital(int_digits(x), digits=digits)
-               for x in known_pandigital)
-    assert not any(is_pandigital(int_digits(x), digits=digits)
-                   for x in known_not_pandigital)
+    assert all(is_pandigital(int_digits(x), digits=digits) for x in known_pandigital)
+    assert not any(
+        is_pandigital(int_digits(x), digits=digits) for x in known_not_pandigital
+    )

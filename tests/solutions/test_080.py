@@ -7,7 +7,7 @@ def solution():
     for i in range(100):
         sqrt = dec.Decimal(i).sqrt()
         if not sqrt == int(sqrt):
-            digits = list(str(sqrt).replace('.', '')[0:100])
+            digits = list(str(sqrt).replace(".", "")[0:100])
             s += sum(int(x) for x in digits)
     return s
 

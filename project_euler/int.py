@@ -1,15 +1,16 @@
 from itertools import count
 from math import log10
+from typing import Generator, Union
 
 
-def int_digits(n, num=None):
+def int_digits(n: int, num: Union[int, None] = None) -> Generator:
     if n == 0:
         yield 0
     else:
         n = abs(n)
         n_len = int(log10(n)) + 1
         for i in count():
-            if i >= n_len or num and i >= abs(num):
+            if i >= n_len or (num and i >= abs(num)):
                 break
             elif num and num < 0:
                 n, digit = divmod(n, 10)

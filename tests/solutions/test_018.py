@@ -19,8 +19,8 @@ def traverse(matrix, path=[], paths=[], x=0, y=0):
 
 def solution():
     matrix = []
-    for line in dat.data('tests/data/018.txt'):
-        matrix.append([int(x) for x in line.split(' ')])
+    for line in dat.data("tests/data/018.txt"):
+        matrix.append([int(x) for x in line.split(" ")])
     return max(sum(x) for x in traverse(matrix))
 
 

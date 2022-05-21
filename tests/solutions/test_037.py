@@ -8,8 +8,8 @@ def solution():
             truncations = set()
             digits = str(p)
             for i in range(len(digits) - 1):
-                truncations.add(int(digits[(i + 1):]))
-                truncations.add(int(digits[:((i + 1) * -1)]))
+                truncations.add(int(digits[(i + 1) :]))
+                truncations.add(int(digits[: ((i + 1) * -1)]))
             if all(pr.is_prime(x) for x in truncations):
                 t_primes.append(p)
                 if len(t_primes) == 11:

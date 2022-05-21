@@ -4,8 +4,8 @@ import project_euler.data as dat
 
 def solution():
     matrix = []
-    for line in dat.data('tests/data/011.txt'):
-        matrix.append([int(x) for x in line.split(' ')])
+    for line in dat.data("tests/data/011.txt"):
+        matrix.append([int(x) for x in line.split(" ")])
     chunk = 4
     m = 0
     for i, j in it.product(range(len(matrix)), range(len(matrix[0]))):
