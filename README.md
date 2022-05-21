@@ -1,8 +1,8 @@
-# project_euler
+# Project Euler
+
+[![Continuous Integration](https://github.com/mconigliaro/project_euler/actions/workflows/ci.yml/badge.svg)](https://github.com/mconigliaro/project_euler/actions/workflows/ci.yml)
 
 [![](http://projecteuler.net/profile/mconigliaro.png)](http://projecteuler.net)
-
-[![project_euler](https://circleci.com/gh/mconigliaro/project_euler.svg?style=svg)](https://circleci.com/gh/mconigliaro/project_euler)
 
 ## Goals
 
